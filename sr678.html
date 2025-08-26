@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Adedamola - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #333; /* Dark grey background */
+            color: #000; /* Black text */
+        }
+        header {
+            background: #000; /* Black header */
+            color: #f4f4f4; /* Light grey text */
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #444; /* Slightly lighter grey */
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #ccc; /* Lighter grey on hover */
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background: #f4f4f4; /* Light grey section background */
+            border: 1px solid #000; /* Black border */
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            color: #000;
+            text-align: center;
+        }
+        .intro, .about, .contact {
+            text-align: center;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .portfolio-item {
+            background: #fff; /* White for contrast */
+            padding: 1rem;
+            border: 1px solid #000;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .portfolio-item a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .portfolio-item a:hover {
+            color: #444;
+        }
+        .tools ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .tools li {
+            background: #000; /* Black tool tags */
+            color: #f4f4f4;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        .contact a {
+            color: #000;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            color: #444;
+        }
+        footer {
+            background: #000;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Header -->
+    <header>
+        <h1>Sam Adedamola</h1>
+        <p>Web Developer | Graphic Designer | Culinary Creator</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#intro">About</a>
+        <a href="#web-portfolio">Web Portfolio</a>
+        <a href="#design-portfolio">Design Portfolio</a>
+        <a href="#cooking-portfolio">Cooking Portfolio</a>
+        <a href="#tools">Tools</a>
+        <a href="#about">More About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Section 2: Introduction -->
+    <section id="intro" class="intro">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hi, I'm Sam Adedamola, a passionate web developer and graphic designer based in Nigeria. I craft responsive websites, create stunning visuals, and love experimenting in the kitchen to cook up unique dishes. Explore my work below!</p>
+    </section>
+
+    <!-- Section 3: Web Development Portfolio -->
+    <section id="web-portfolio">
+        <h2>Web Development Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Personal Website</h3>
+                <img src="https://via.placeholder.com/300x200?text=Web+Project+1" alt="Web Project 1">
+                <p>A responsive portfolio site built with HTML and CSS. [Replace with your project details.]</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>E-Commerce Site</h3>
+                <img src="https://via.placeholder.com/300x200?text=Web+Project+2" alt="Web Project 2">
+                <p>A mock online store with JavaScript functionality. [Replace with your project details.]</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Graphic Design Portfolio -->
+    <section id="design-portfolio">
+        <h2>Graphic Design Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Logo Design</h3>
+                <img src="https://via.placeholder.com/300x200?text=Design+1" alt="Design 1">
+                <p>A modern logo created in Canva. [Replace with your design details.]</p>
+                <a href="#">View Design</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Poster Design</h3>
+                <img src="https://via.placeholder.com/300x200?text=Design+2" alt="Design 2">
+                <p>A promotional poster for a local event. [Replace with your design details.]</p>
+                <a href="#">View Design</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Cooking Portfolio -->
+    <section id="cooking-portfolio">
+        <h2>Cooking Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3>Jollof Rice Special</h3>
+                <img src="https://via.placeholder.com/300x200?text=Cooking+1" alt="Cooking 1">
+                <p>A unique take on Nigerian Jollof Rice. [Replace with your recipe details.]</p>
+                <a href="#">See Recipe</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Creative Dessert</h3>
+                <img src="https://via.placeholder.com/300x200?text=Cooking+2" alt="Cooking 2">
+                <p>A fusion dessert with local ingredients. [Replace with your recipe details.]</p>
+                <a href="#">See Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Tools -->
+    <section id="tools" class="tools">
+        <h2>Tools I Use</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Canva</li>
+            <li>Figma</li>
+            <li>VS Code</li>
+            <li>Git</li>
+            <li>GIMP</li>
+        </ul>
+    </section>
+
+    <!-- Section 7: About -->
+    <section id="about" class="about">
+        <h2>More About Me</h2>
+        <p>I'm a self-taught web developer and designer with a passion for creating user-friendly websites and eye-catching graphics. My love for cooking allows me to bring creativity to both digital and culinary arts. I’m always learning new skills and experimenting with innovative ideas to deliver the best results.</p>
+    </section>
+
+    <!-- Section 8: Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:contact@samadedamola4@gmail.com">contact@samadedamola4@gmail.com</a></p>
+        <p>Phone: <a href="tel:+2349032830132">+2349032830132</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sam Adedamola. All rights reserved.</p>
+    </footer>
+</body>
+                                        </html>
